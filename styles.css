@@ -1,0 +1,143 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  width: 200px; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+#searchInput:focus {
+  outline: none;
+}
+
+.search-container button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #555;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 30%; /* Adjust width as needed */
+  margin: 0 1.5% 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h2 {
+  padding: 10px;
+}
+
+.product p.price,
+.product p.description {
+  padding: 0 10px;
+}
+
+.product button.add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.product button.add-to-cart:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Video container styles */
+.video-container {
+  text-align: center;
+  margin-top: 40px; /* Adjust margin as needed */
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto; /* Allow horizontal scrolling if videos overflow */
+}
+
+/* Individual video styles */
+.video {
+  max-width: 80%; /* Adjust maximum width as needed */
+}
+
+.video video {
+  width: 100%; /* Ensure the video takes up the entire width */
+  height: auto; /* Maintain aspect ratio */
+}
